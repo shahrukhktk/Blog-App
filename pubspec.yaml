@@ -48,6 +48,7 @@ flutter:
     - images/newlogo.png
     - images/backgroundscreen.png
     - images/divider.png
+    - images/undraw_image.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
