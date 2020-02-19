@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_application/screens/authentication_screens/signin.dart';
 
 void main() => runApp(new MaterialApp(
   theme: ThemeData(primaryColor: Color.fromRGBO(33, 162, 228, 1), accentColor: Color.fromRGBO(33, 162, 228, 1)),
@@ -46,10 +47,10 @@ class MainScreen extends StatelessWidget{
                       ),
                       child: FlatButton(
                         onPressed: (){
-//                      Navigator.push(
-//                        context,
-//                        MaterialPageRoute(builder: (context) => SignUpScreen()),
-//                      );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginScreen()),
+                      );
                         },
                         child: Center(
                           child: Text('GET STARTED', style: TextStyle(
