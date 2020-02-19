@@ -34,7 +34,7 @@ class MainScreen extends StatelessWidget{
                     child: Image(image: AssetImage('images/undraw_image.png'),),
                   ),
                   SizedBox(height: 30,),
-                  Padding(padding: EdgeInsets.fromLTRB(20.0, 100.0, 20.0, 0),
+                  Padding(padding: EdgeInsets.fromLTRB(20.0, 100.0, 20.0, 20.0),
                     child: Container(
                       height: 50,
                       decoration: BoxDecoration(
