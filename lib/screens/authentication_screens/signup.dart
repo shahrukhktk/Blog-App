@@ -31,25 +31,25 @@ class SignUpScreen extends StatelessWidget {
                   ),
                 ),
                 Padding(padding: EdgeInsets.fromLTRB(20.0, 100.0, 20.0, 20.0),
-                  child: TextField(
+                  child: TextFormField(
                     controller: controller,
                     decoration: InputDecoration(
                       hintMaxLines: 4,
                       contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
                       prefixIcon: Icon(Icons.person),fillColor: Colors.white,
-                      hintText: "Username",
+                      labelText: 'Username',
                       border: OutlineInputBorder(),
                     ),
                   ),
                 ),
                 Padding(padding: EdgeInsets.all(20.0),
-                  child: TextField(
+                  child: TextFormField(
                     controller: controller,
                     decoration: InputDecoration(
                       hintMaxLines: 4,
                       contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
                       prefixIcon: Icon(Icons.email),fillColor: Colors.white,
-                      hintText: "Email",
+                      labelText: 'Email',
                       border: OutlineInputBorder(),
                     ),
                   ),
@@ -65,11 +65,11 @@ class SignUpScreen extends StatelessWidget {
 //                    blurRadius: 20.0,
 //                        offset: Offset(0, 10),),
                         ),
-                        child: TextField(
+                        child: TextFormField(
                           decoration: InputDecoration(
                             contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
                             prefixIcon: Icon(Icons.lock_open),fillColor: Colors.white,
-                            hintText: "Password",
+                            labelText: 'password',
                             border: OutlineInputBorder(),
                           ),
                         ),

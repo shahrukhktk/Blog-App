@@ -31,13 +31,13 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
                 Padding(padding: EdgeInsets.fromLTRB(20.0, 100.0, 20.0, 20.0),
-                  child: TextField(
+                  child: TextFormField(
                     controller: controller,
                     decoration: InputDecoration(
                       hintMaxLines: 4,
                       contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
                       prefixIcon: Icon(Icons.email),fillColor: Colors.white,
-                      hintText: "Email",
+                      labelText: 'Email',
                       border: OutlineInputBorder(),
                     ),
                   ),
@@ -53,11 +53,11 @@ class LoginScreen extends StatelessWidget {
 //                    blurRadius: 20.0,
 //                        offset: Offset(0, 10),),
                         ),
-                        child: TextField(
+                        child: TextFormField(
                           decoration: InputDecoration(
                             contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
                             prefixIcon: Icon(Icons.lock_open),fillColor: Colors.white,
-                            hintText: "Password",
+                            labelText: 'Password',
                             border: OutlineInputBorder(),
                           ),
                         ),
