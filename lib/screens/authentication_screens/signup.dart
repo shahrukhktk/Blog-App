@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_application/screens/authentication_screens/signup.dart';
+import 'package:flutter_project_application/screens/authentication_screens/signin.dart';
 import 'package:flutter_project_application/screens/main.dart';
 
 void main() => runApp(new MaterialApp(
   theme: ThemeData(primaryColor: Color.fromRGBO(33, 162, 228, 1), accentColor: Color.fromRGBO(33, 162, 228, 1)),
   debugShowCheckedModeBanner: false,
-  home: LoginScreen(),
+  home: SignUpScreen(),
 ));
 
-class LoginScreen extends StatelessWidget {
+class SignUpScreen extends StatelessWidget {
 
   TextEditingController controller = TextEditingController();
 
@@ -24,13 +24,25 @@ class LoginScreen extends StatelessWidget {
                 Padding(padding: EdgeInsets.only(top: 50.0),
                   child: Align(
                     alignment: Alignment.center,
-                    child: Text('SIGN IN', style: TextStyle(
+                    child: Text('SIGN UP', style: TextStyle(
                       fontWeight: FontWeight.bold, fontSize: 20.0, letterSpacing: 5.0 , color: Color.fromRGBO(33, 162, 228, 1),
                     ),
                     ),
                   ),
                 ),
                 Padding(padding: EdgeInsets.fromLTRB(20.0, 100.0, 20.0, 20.0),
+                  child: TextField(
+                    controller: controller,
+                    decoration: InputDecoration(
+                      hintMaxLines: 4,
+                      contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
+                      prefixIcon: Icon(Icons.person),fillColor: Colors.white,
+                      hintText: "Username",
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ),
+                Padding(padding: EdgeInsets.all(20.0),
                   child: TextField(
                     controller: controller,
                     decoration: InputDecoration(
@@ -85,7 +97,7 @@ class LoginScreen extends StatelessWidget {
                         );
                       },
                       child: Center(
-                        child: Text('LOGIN', style: TextStyle(
+                        child: Text('REGISTER', style: TextStyle(
                             fontWeight: FontWeight.bold, fontSize: 18.0, color: Colors.white, letterSpacing: 1.5
                         ),
                         ),
@@ -100,7 +112,7 @@ class LoginScreen extends StatelessWidget {
                         onPressed: (){
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => SignUpScreen()),
+                            MaterialPageRoute(builder: (context) => LoginScreen()),
                           );
 //                  Fluttertoast.showToast(
 ////                        msg: "Create new account",
@@ -111,7 +123,7 @@ class LoginScreen extends StatelessWidget {
 ////                        backgroundColor: Colors.transparent,
 ////                  );
                         },
-                        child: Text('Create new account', style: TextStyle(color: Color.fromRGBO(33, 162, 228, 1), fontSize: 15.0,
+                        child: Text('Already have an account', style: TextStyle(color: Color.fromRGBO(33, 162, 228, 1), fontSize: 15.0,
                           ),
                         ),
                       ),
