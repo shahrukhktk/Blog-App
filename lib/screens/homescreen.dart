@@ -16,7 +16,9 @@ class HomeScreen extends StatelessWidget
         title: Text('Home Screen'),
         backgroundColor: Color.fromRGBO(33, 162, 228, 1),
       ),
-
+      body: ListView(
+        
+      ),
     );
   }
 
