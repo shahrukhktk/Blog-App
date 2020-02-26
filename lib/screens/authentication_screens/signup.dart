@@ -93,7 +93,7 @@ class SignUpScreen extends StatelessWidget {
                       onPressed: (){
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MainScreen()),
+                          MaterialPageRoute(builder: (context) => LoginScreen()),
                         );
                       },
                       child: Center(
