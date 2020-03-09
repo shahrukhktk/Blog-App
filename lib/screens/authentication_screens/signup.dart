@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_application/screens/authentication_screens/signin.dart';
 import 'package:flutter_project_application/screens/main.dart';
+import '../homescreen.dart';
 
 void main() => runApp(new MaterialApp(
   theme: ThemeData(primaryColor: Color.fromRGBO(33, 162, 228, 1), accentColor: Color.fromRGBO(33, 162, 228, 1)),
@@ -93,7 +94,7 @@ class SignUpScreen extends StatelessWidget {
                       onPressed: (){
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => LoginScreen()),
+                          MaterialPageRoute(builder: (context) => HomeScreen()),
                         );
                       },
                       child: Center(
@@ -127,7 +128,7 @@ class SignUpScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                    )
+                    ),
                 ),
               ],
             ),
